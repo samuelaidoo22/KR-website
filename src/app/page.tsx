@@ -268,7 +268,7 @@ export default function Home() {
               </ul>
               <div className="mt-8 flex flex-wrap items-center gap-3 text-sm font-semibold text-gold-600">
                 <span className="badge bg-gold-500/15 text-gold-700">1kg • 5kg • 10kg • 25kg</span>
-                <Link href="/shop" className="inline-flex items-center gap-2 text-sm text-brown-900 hover:text-gold-600">
+                <Link href="/products" className="inline-flex items-center gap-2 text-sm text-brown-900 hover:text-gold-600">
                   Order today
                   <ArrowRight className="h-4 w-4" />
                 </Link>

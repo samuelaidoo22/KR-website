@@ -90,8 +90,8 @@ export default function ProductsPage() {
             Our rice is cultivated by empowered farmers, processed with precision, and delivered nationwide with pride.
           </motion.p>
           <div className="mt-8 flex flex-wrap gap-3 text-sm font-semibold text-brown-900">
-            <Link href="/shop" className="rounded-full bg-gold-500 px-6 py-3 text-brown-900 hover:bg-gold-400">
-              Shop Kyidom Rice
+            <Link href="/products" className="rounded-full bg-gold-500 px-6 py-3 text-brown-900 hover:bg-gold-400">
+              View Products
             </Link>
             <Link href="/contact" className="rounded-full border border-white/40 px-6 py-3 text-white hover:border-white">
               Request Distribution

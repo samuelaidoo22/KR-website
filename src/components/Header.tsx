@@ -42,9 +42,6 @@ export default function Header() {
         </nav>
 
         <div className="hidden items-center gap-3 lg:flex">
-          <Link href="/shop" className="rounded-full border border-brown-900/20 px-5 py-2 text-sm font-semibold text-brown-900 hover:border-brown-900">
-            Shop Rice
-          </Link>
           <Link href="/contact" className="rounded-full bg-gold-500 px-5 py-2 text-sm font-semibold text-brown-900 shadow hover:bg-gold-400">
             Partner With Us
           </Link>
@@ -73,9 +70,7 @@ export default function Header() {
               </Link>
             ))}
             <div className="mt-3 flex flex-col gap-3">
-              <Link href="/shop" onClick={() => setOpen(false)} className="rounded-full border border-brown-900/20 px-5 py-2 text-center text-sm font-semibold text-brown-900">
-                Shop Rice
-              </Link>
+              {/* Shop link removed */}
               <Link
                 href="/contact"
                 onClick={() => setOpen(false)}
