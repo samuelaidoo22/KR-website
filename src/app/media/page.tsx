@@ -1,22 +1,11 @@
-import MediaGallery from '../../components/MediaGallery';
-import { mediaItems, allTags } from '../../data/media';
-
-export default function MediaPage() {
-  return (
-    <main className="max-w-6xl mx-auto px-4 py-12">
-      <h1 className="text-3xl font-bold mb-4">Media</h1>
-      <p className="text-gray-600 mb-6">A gallery of our products, people and impact. Click any image to enlarge.</p>
-
-      <MediaGallery items={mediaItems} tags={allTags} />
-    </main>
-  );
-}
-'use client';
+"use client";
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Camera, Newspaper, Mic, Video, Calendar } from 'lucide-react';
+import MediaGallery from '../../components/MediaGallery';
+import { mediaItems, allTags } from '../../data/media';
 
 const pressReleases = [
   {
@@ -318,6 +307,15 @@ export default function MediaPage() {
               <div key={event.title} className="flex flex-col gap-3 rounded-2xl border border-brown-100 bg-amber-50/60 p-5 md:flex-row md:items-center md:justify-between">
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-wide text-gold-600">{event.date}</p>
+
+                <section className="container px-4">
+                  <h2 className="section-title">Photo gallery</h2>
+                  <p className="section-subtitle mt-2 max-w-3xl">Browse our collection of product, field, and community photos.</p>
+                  <div className="mt-6">
+                    <MediaGallery items={mediaItems} tags={allTags} />
+                  </div>
+                </section>
+
                   <h3 className="mt-1 text-base font-semibold text-brown-900">{event.title}</h3>
                   <p className="text-sm text-brown-600">{event.description}</p>
                 </div>
