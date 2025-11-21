@@ -405,12 +405,12 @@ export default function Home() {
       <section className="relative overflow-hidden py-20">
         <Image src="/pics/IMG-20250315-WA0010.jpg" alt="Kyidom operations team" fill className="object-cover" />
         <div className="absolute inset-0 bg-brown-900/80" aria-hidden="true" />
-        <div className="relative container mx-auto px-4 text-center text-white">
-          <h3 className="text-3xl font-semibold md:text-4xl">Ready to co-create Ghana&apos;s food future?</h3>
+        <div className="relative container mx-auto px-4 text-center text-white z-20">
+          <h3 className="text-3xl font-semibold md:text-4xl max-w-4xl mx-auto">Ready to co-create Ghana&apos;s food future?</h3>
           <p className="mx-auto mt-4 max-w-3xl text-white/80">
             Connect with Kyidom Foods for product enquiries, partnership opportunities, and impact collaborations across Ghana and beyond.
           </p>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center sm:items-center sm:gap-4">
             <Link href="/contact" className="inline-flex items-center justify-center rounded-full bg-gold-500 px-6 py-3 text-sm font-semibold text-brown-900 hover:bg-gold-400">
               Contact Kyidom Foods
             </Link>
