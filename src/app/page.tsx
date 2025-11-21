@@ -157,27 +157,19 @@ export default function Home() {
           </div>
 
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
+            initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="card-surface relative overflow-hidden bg-white/90 p-8"
+            transition={{ duration: 0.7, delay: 0.2 }}
+            className="relative overflow-hidden rounded-3xl shadow-2xl"
           >
-            <h2 className="text-lg font-semibold text-brown-900">Why Kyidom?</h2>
-            <p className="mt-3 text-sm text-brown-600">
-              Female-led, purpose-driven, and committed to enhancing Ghana's rice value chain through innovation and community support.
-            </p>
-            <div className="mt-6 grid gap-4 text-sm">
-              <div className="rounded-2xl bg-amber-50/80 p-4">
-                <p className="font-semibold text-brown-900">500+ farmer households empowered</p>
-                <p className="mt-1 text-brown-600">Training, mechanisation, and reliable harvest off-take.</p>
-              </div>
-              <div className="rounded-2xl bg-amber-50/80 p-4">
-                <p className="font-semibold text-brown-900">National distribution footprint</p>
-                <p className="mt-1 text-brown-600">Strategic outlets across Accra, Cape Coast, Tamale, and beyond.</p>
-              </div>
-              <div className="rounded-2xl bg-amber-50/80 p-4">
-                <p className="font-semibold text-brown-900">Community-centred impact</p>
-                <p className="mt-1 text-brown-600">Literacy, empowerment, and inclusive opportunities for women and youth.</p>
+            <div className="relative h-80 sm:h-full min-h-[280px]">
+              <Image src="/pics/kyidom all.jpg" alt="Kyidom products" fill className="object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-brown-900/60 via-transparent to-transparent" />
+              <div className="absolute left-6 bottom-6 right-6 p-4 text-white">
+                <h2 className="text-lg font-semibold">Why Kyidom?</h2>
+                <p className="mt-2 text-sm text-white/90">
+                  Female-led, purpose-driven, and committed to enhancing Ghana's rice value chain through innovation and community support.
+                </p>
               </div>
             </div>
           </motion.div>
