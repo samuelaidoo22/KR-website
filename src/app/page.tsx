@@ -403,7 +403,7 @@ export default function Home() {
       </section>
 
       <section className="relative overflow-hidden py-20">
-        <Image src="/pics/IMG-20250315-WA0010.jpg" alt="Kyidom operations team" fill className="object-cover" />
+        <Image src="/pics/kyidom all.jpg" alt="Kyidom product shot" fill className="object-cover" />
         <div className="absolute inset-0 bg-brown-900/80" aria-hidden="true" />
         <div className="relative container mx-auto px-4 text-center text-white z-20">
           <h3 className="text-3xl font-semibold md:text-4xl max-w-4xl mx-auto">Ready to co-create Ghana&apos;s food future?</h3>
