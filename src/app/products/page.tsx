@@ -8,17 +8,17 @@ import { Package, Leaf, ShieldCheck, Truck } from 'lucide-react';
 const productRanges = [
   {
     title: 'Kyidom Long Grain Rice',
-    weight: '1kg · 5kg · 10kg · 25kg',
+    weight: '1kg',
     description:
       'Aromatic, stone-free, and triple-sorted for consistent cooking—ideal for homes, restaurants, and events.',
-    image: '/pics/IMG-20250315-WA0008.jpg',
+    image: '/pics/kyidom 1kg3.jpg',
   },
   {
-    title: 'Chef’s Selection Bulk Packs',
-    weight: '50kg · Custom white-label',
+    title: 'Kyidom Long Grain Rice',
+    weight: '5kg',
     description:
       'Specialised milling and packaging solutions for hotels, institutions, and foodservice partners.',
-    image: '/pics/IMG-20250315-WA0010.jpg',
+    image: '/pics/kyidom 5kg3.jpg',
   },
 ];
 
@@ -56,7 +56,7 @@ const faqs = [
   },
   {
     question: 'What sizes are available?',
-    answer: 'Consumer packs (1kg, 5kg, 10kg, 25kg) and bulk options (50kg, custom). Special requests welcome.',
+    answer: 'Consumer packs (1kg, 5kg) and bulk options (5kg, custom). Special requests welcome.',
   },
   {
     question: 'Where can I find Kyidom rice in-person?',
@@ -69,7 +69,7 @@ export default function ProductsPage() {
     <div className="space-y-20 pb-20">
       <section className="relative overflow-hidden bg-brown-900">
         <div className="absolute inset-0" aria-hidden="true">
-          <Image src="/pics/IMG-20250315-WA0014.jpg" alt="Kyidom product hero" fill className="object-cover" priority />
+          <Image src="/pics/kyidom 1kg3.jpg" alt="Kyidom product hero" fill className="object-cover-[center_20.5%]" priority />
           <div className="absolute inset-0 bg-brown-900/85" />
         </div>
         <div className="relative container px-4 py-24 text-white">
@@ -112,15 +112,18 @@ export default function ProductsPage() {
             All products are proudly milled and packaged in Ghana.
           </div>
         </div>
-        <div className="mt-12 grid gap-8 lg:grid-cols-2">
+        <div className="mt-12 grid gap-12 lg:grid-cols-2">
           {productRanges.map((product) => (
-            <div key={product.title} className="card-surface overflow-hidden">
-              <div className="relative h-64">
-                <Image src={product.image} alt={product.title} fill className="object-cover" />
+            <div
+              key={product.title}
+              className="card-surface overflow-hidden transform transition-shadow hover:shadow-2xl hover:-translate-y-1"
+            >
+              <div className="relative h-[26rem] sm:h-[22rem] md:h-[34rem]">
+                <Image src={product.image} alt={product.title} fill className="object-cover object-center" />
               </div>
-              <div className="p-8">
-                <h3 className="text-2xl font-semibold text-brown-900">{product.title}</h3>
-                <p className="mt-2 text-sm font-semibold uppercase tracking-wide text-gold-600">{product.weight}</p>
+              <div className="p-14">
+                <h3 className="text-5xl font-semibold text-brown-900">{product.title}</h3>
+                <p className="mt-3 text-sm font-semibold uppercase tracking-wide text-gold-600">{product.weight}</p>
                 <p className="mt-4 text-sm text-brown-600">{product.description}</p>
               </div>
             </div>
@@ -159,8 +162,8 @@ export default function ProductsPage() {
             <li>• Direct orders via our sales team for corporate and institutional clients</li>
           </ul>
         </div>
-        <div className="card-surface relative min-h-[360px] overflow-hidden">
-          <Image src="/pics/IMG-20250315-WA0037.jpg" alt="Kyidom retail outlet" fill className="object-cover" />
+        <div className="card-surface relative min-h-[500px] overflow-hidden">
+          <Image src="/pics/IMG-20250315-WA0037.jpg" alt="Kyidom retail outlet" fill className="object-cover-[center_20.5%]" />
           <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-brown-900/70 via-transparent to-transparent p-6 text-white">
             <p className="text-sm text-white/80">
               Contact us to join our distributor network and bring Kyidom rice closer to your customers.
