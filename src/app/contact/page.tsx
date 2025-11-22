@@ -46,49 +46,6 @@ export default function ContactPage() {
 
   return (
     <div className="space-y-20 pb-20">
-      <section className="relative overflow-hidden bg-brown-900">
-        <div className="absolute inset-0" aria-hidden="true">
-          <Image src="/pics/IMG-20250315-WA0028.jpg" alt="Kyidom contact" fill className="object-cover" priority />
-
-          <div className="absolute inset-0 bg-brown-900/80" />
-        </div>
-        <div className="relative container grid gap-10 px-4 py-24 lg:grid-cols-[1.1fr,0.9fr] text-white">
-          <div>
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="max-w-3xl font-display text-4xl font-semibold md:text-6xl"
-            >
-              Let’s build the future of Ghanaian rice together
-            </motion.h1>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="mt-6 max-w-2xl text-lg text-white/80"
-            >
-              Reach out to Kyidom Foods for product orders, distribution partnerships, CSR collaborations, or farmer support.
-            </motion.p>
-            <div className="mt-10 flex flex-wrap gap-3 text-sm font-semibold">
-              <Link href="mailto:hello@kyidomfoods.com" className="rounded-full bg-gold-500 px-6 py-3 text-brown-900 hover:bg-gold-400">
-                Email our team
-              </Link>
-              <Link href="tel:+233300001234" className="rounded-full border border-white/40 px-6 py-3 text-white hover:border-white">
-                Call +233 30 000 1234
-              </Link>
-            </div>
-          </div>
-          <div className="card-surface bg-white/95 p-8 text-brown-900">
-            <h2 className="text-lg font-semibold">Support hours</h2>
-            <ul className="mt-5 space-y-3 text-sm text-brown-700">
-              <li>• Monday – Friday: 8:00 AM – 6:00 PM GMT</li>
-              <li>• Saturday: 9:00 AM – 2:00 PM GMT</li>
-              <li>• After-hours support available for logistics partners</li>
-            </ul>
-          </div>
-        </div>
-      </section>
 
       <section className="container px-4">
         <div className="grid gap-6 md:grid-cols-3">
@@ -190,15 +147,17 @@ export default function ContactPage() {
           </form>
         </div>
         <div className="card-surface relative overflow-hidden">
-          <Image src="/pics/IMG-20250315-WA0010.jpg" alt="Kyidom support team" fill className="object-cover" />
+          <Image src="/pics/IMG-20250315-WA0018.jpg" alt="Kyidom support team" fill className="object-cover" />
 
-          <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-brown-900/80 via-transparent to-transparent p-6 text-white">
-            <h3 className="text-lg font-semibold">Partnership assurance</h3>
-            <ul className="mt-3 space-y-2 text-sm text-white/85">
-              {supportHighlights.map((highlight) => (
-                <li key={highlight}>• {highlight}</li>
-              ))}
-            </ul>
+          <div className="absolute inset-x-0 bottom-0 p-4 flex">
+            <div className="rounded-lg bg-brown-900/85 p-3 backdrop-blur-sm max-w-md">
+              <h3 className="text-base font-semibold text-white">Partnership assurance</h3>
+              <ul className="mt-2 space-y-1 text-sm">
+                {supportHighlights.map((highlight) => (
+                  <li key={highlight} className="text-white/95 font-medium">• {highlight}</li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </section>

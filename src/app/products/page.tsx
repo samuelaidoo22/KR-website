@@ -69,7 +69,7 @@ export default function ProductsPage() {
     <div className="space-y-20 pb-20">
       <section className="relative overflow-hidden bg-brown-900">
         <div className="absolute inset-0" aria-hidden="true">
-          <Image src="/pics/kyidom 1kg3.jpg" alt="Kyidom product hero" fill className="object-cover-[center_20.5%]" priority />
+          <Image src="/pics/IMG-20250315-WA0026.jpg" alt="Kyidom product hero" fill className="object-cover-[center_20.5%]" priority />
           <div className="absolute inset-0 bg-brown-900/85" />
         </div>
         <div className="relative container px-4 py-24 text-white">

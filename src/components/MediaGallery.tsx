@@ -11,12 +11,12 @@ type Props = {
 
 export default function MediaGallery({ items, tags }: Props) {
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
-  const [visible, setVisible] = useState(9);
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
   const filtered = selectedTag ? items.filter((i) => (i.tags || []).includes(selectedTag)) : items;
 
-  const showMore = () => setVisible((v) => v + 9);
+  // Deduplicate images by `src` to avoid repeated images in the gallery/lightbox
+  const unique = Array.from(new Map(filtered.map((it) => [it.src, it])).values());
 
   return (
     <div>
@@ -38,19 +38,11 @@ export default function MediaGallery({ items, tags }: Props) {
         ))}
       </div>
 
-      <MediaGrid items={filtered.slice(0, visible)} onOpen={(idx) => setLightboxIndex(idx)} />
-
-      {visible < filtered.length && (
-        <div className="mt-6 text-center">
-          <button className="px-4 py-2 bg-gray-800 text-white rounded" onClick={showMore}>
-            Load more
-          </button>
-        </div>
-      )}
+      <MediaGrid items={unique} onOpen={(idx) => setLightboxIndex(idx)} />
 
       {lightboxIndex !== null && (
         <Lightbox
-          items={filtered}
+          items={unique}
           startIndex={lightboxIndex}
           onClose={() => setLightboxIndex(null)}
         />

@@ -177,13 +177,14 @@ export default function Home() {
       </section>
 
       <section className="bg-brown-50 py-16">
-        <div className="container grid gap-12 px-4 lg:grid-cols-[1.2fr,1fr]">
-          <div>
+        <div className="container px-4">
+          <div className="mx-auto max-w-5xl text-center">
             <h2 className="section-title">Mission, Vision & Purpose</h2>
-            <p className="section-subtitle mt-4 max-w-3xl">
+            <p className="section-subtitle mt-4 mx-auto max-w-3xl">
               Every grain of Kyidom rice carries the dedication of Ghanaian farmers and the promise of sustainable growth for our communities.
             </p>
-            <div className="mt-10 grid gap-6 md:grid-cols-3">
+
+            <div className="mt-10 grid gap-6 md:grid-cols-3 justify-items-center">
               {missionCards.map(({ icon: Icon, title, description }, index) => (
                 <motion.article
                   key={title}
@@ -191,19 +192,14 @@ export default function Home() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="card-surface h-full p-6"
+                  className="card-surface h-full p-6 text-center"
                 >
-                  <Icon className="h-8 w-8 text-gold-500" aria-hidden="true" />
+                  <Icon className="h-8 w-8 text-gold-500 mx-auto" aria-hidden="true" />
                   <h3 className="mt-4 text-lg font-semibold text-brown-900">{title}</h3>
                   <p className="mt-3 text-sm text-brown-600">{description}</p>
                 </motion.article>
               ))}
             </div>
-          </div>
-
-          <div className="relative h-full overflow-hidden rounded-3xl">
-            <Image src="/pics/IMG-20250315-WA0010.jpg" alt="Kyidom milling operations" fill className="object-cover" />
-            <div className="absolute inset-0 bg-brown-900/20" />
           </div>
         </div>
       </section>
@@ -233,7 +229,7 @@ export default function Home() {
           </div>
         </div>
         <div className="card-surface relative min-h-[380px] overflow-hidden">
-          <Image src="/pics/IMG-20250315-WA0029.jpg" alt="Female agripreneur holding Kyidom rice" fill className="object-cover" />
+          <Image src="/pics/IMG-20250315-WA0066.jpg" alt="Female agripreneur holding Kyidom rice" fill className="object-cover" />
           <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-brown-900/80 via-brown-900/40 to-transparent p-6 text-white">
             <h3 className="text-xl font-semibold">Commercial farming is possible</h3>
             <p className="mt-2 text-sm text-white/80">
@@ -259,7 +255,7 @@ export default function Home() {
                 <li>• Available in consumer and bulk formats for home, retail, and foodservice.</li>
               </ul>
               <div className="mt-8 flex flex-wrap items-center gap-3 text-sm font-semibold text-gold-600">
-                <span className="badge bg-gold-500/15 text-gold-700">1kg • 5kg • 10kg • 25kg</span>
+                <span className="badge bg-gold-500/15 text-gold-700">1kg • 5kg</span>
                 <Link href="/products" className="inline-flex items-center gap-2 text-sm text-brown-900 hover:text-gold-600">
                   Order today
                   <ArrowRight className="h-4 w-4" />
@@ -267,7 +263,7 @@ export default function Home() {
               </div>
             </div>
             <div className="relative min-h-[360px] overflow-hidden rounded-3xl">
-              <Image src="/pics/IMG-20250315-WA0008.jpg" alt="Kyidom Long Grain Rice packages" fill className="object-cover" />
+              <Image src="/pics/IMG-20250315-WA0014.jpg" alt="Kyidom Long Grain Rice packages" fill className="object-cover" />
             </div>
           </div>
         </div>

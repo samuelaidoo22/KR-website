@@ -117,39 +117,39 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="relative overflow-hidden rounded-3xl border border-amber-500/25 bg-white/5 p-6 text-amber-100/90 shadow-lg backdrop-blur-md">
+            <div className="relative overflow-hidden rounded-3xl border border-amber-500/25 bg-white/5 p-4 text-amber-100/90 shadow-lg backdrop-blur-md">
               <div className="absolute inset-0">
                 <Image src="/pics/IMG-20250315-WA0026.jpg" alt="Kyidom distribution map" fill className="object-cover opacity-30 mix-blend-soft-light" />
                 <div className="absolute inset-0 bg-gradient-to-br from-[#2d140c]/75 via-[#1d0e07]/65 to-[#120905]/85" />
               </div>
-              <div className="relative space-y-5">
-                <h3 className="text-lg font-semibold text-white">From farm gates to dining tables</h3>
+              <div className="relative space-y-4">
+                <h3 className="text-base font-semibold text-white">From farm gates to dining tables</h3>
                 <p className="text-xs text-amber-100/85">
                   Kyidom rice travels through a traceable network of farmer cooperatives, modern mills, and retail partners to keep premium Ghanaian grains within reach.
                 </p>
-                <div className="grid gap-4 text-xs">
-                  <div className="rounded-2xl border border-amber-400/20 bg-white/10/10 p-4">
+                <div className="grid gap-3 text-xs">
+                  <div className="rounded-2xl border border-amber-400/20 bg-white/5 p-3">
                     <p className="font-semibold text-white">Retail presence</p>
                     <p className="mt-1 text-amber-100/75">Accra · Cape Coast · Tamale · Takoradi</p>
                   </div>
-                  <div className="rounded-2xl border border-amber-400/20 bg-white/10/10 p-4">
+                  <div className="rounded-2xl border border-amber-400/20 bg-white/5 p-3">
                     <p className="font-semibold text-white">Bulk supply</p>
                     <p className="mt-1 text-amber-100/75">Hotels · Restaurants · School feeding · Export crates</p>
                   </div>
                 </div>
-                <div className="space-y-2 text-xs">
+                <div className="space-y-1 text-xs">
                   <div className="flex items-start gap-2">
-                    <span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-amber-400" />
-                    <p>Guaranteed aroma retention and moisture control across every batch.</p>
+                    <span className="mt-1 inline-block h-1 w-1 rounded-full bg-amber-400" />
+                    <p className="text-amber-100/90">Guaranteed aroma retention and moisture control across every batch.</p>
                   </div>
                   <div className="flex items-start gap-2">
-                    <span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-amber-400" />
-                    <p>Partner logistics covering last-mile delivery across major cities.</p>
+                    <span className="mt-1 inline-block h-1 w-1 rounded-full bg-amber-400" />
+                    <p className="text-amber-100/90">Partner logistics covering last-mile delivery across major cities.</p>
                   </div>
                 </div>
                 <Link
                   href="/products"
-                  className="inline-flex items-center justify-center rounded-full bg-amber-400 px-5 py-2 text-sm font-semibold text-[#140b07] shadow hover:bg-amber-300"
+                  className="inline-flex items-center justify-center rounded-full bg-amber-400 px-4 py-1.5 text-sm font-semibold text-[#140b07] shadow hover:bg-amber-300"
                 >
                   View product catalogue
                 </Link>

@@ -10,9 +10,7 @@ export default function MediaCard({ item, onClick }: Props) {
     <div className="rounded overflow-hidden bg-white shadow-sm">
       <button onClick={onClick} className="block w-full text-left">
         <img src={item.src} alt={item.alt} className="w-full h-40 object-cover" />
-        <div className="p-2 text-sm text-gray-700">
-          <div className="font-medium">{item.alt}</div>
-        </div>
+        <span className="sr-only">{item.alt}</span>
       </button>
     </div>
   );

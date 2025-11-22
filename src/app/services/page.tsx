@@ -63,7 +63,7 @@ export default function ServicesPage() {
     <div className="space-y-20 pb-20">
       <section className="relative overflow-hidden bg-brown-900">
         <div className="absolute inset-0" aria-hidden="true">
-          <Image src="/pics/IMG-20250315-WA0032.jpg" alt="Kyidom services hero" fill className="object-cover" priority />
+          <Image src="/pics/kyidom 1kg3.jpg" alt="Kyidom services hero" fill className="object-cover-[center_20.5%]" priority />
           <div className="absolute inset-0 bg-brown-900/80" />
         </div>
         <div className="relative container grid gap-10 px-4 py-24 lg:grid-cols-[1.1fr,0.9fr]">
@@ -153,7 +153,7 @@ export default function ServicesPage() {
             </div>
           </div>
           <div className="card-surface relative min-h-[360px] overflow-hidden">
-            <Image src="/pics/IMG-20250315-WA0029.jpg" alt="Kyidom training programme" fill className="object-cover" />
+            <Image src="/pics/IMG-20250315-WA0036.jpg" alt="Kyidom training programme" fill className="object-cover" />
             <div className="absolute inset-0 bg-brown-900/20" />
           </div>
         </div>

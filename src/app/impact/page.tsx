@@ -35,7 +35,7 @@ const stories = [
     subtitle: 'Driving inclusive entrepreneurship',
     description:
       'We equip women-owned farming enterprises with the tools to scale—providing mechanisation access, agronomy coaching, financing guidance, and product development support.',
-    image: '/pics/IMG-20250315-WA0029.jpg',
+    image: '/pics/IMG-20250315-WA0030.jpg',
     highlights: ['Mechanisation support & training', 'Business planning & cooperative development', 'Access to market linkages'],
   },
   {
@@ -43,7 +43,7 @@ const stories = [
     subtitle: 'Fueling literacy & leadership',
     description:
       'Our literacy programme cultivates curiosity in young minds through reading clubs, mentorship, and digital skills that prepare students for agri-innovation careers.',
-    image: '/pics/IMG-20250315-WA0009.jpg',
+    image: '/pics/IMG-20250315-WA0015.jpg',
     highlights: ['Mobile library hubs', 'Mentorship from agribusiness professionals', 'STEM and agritech learning labs'],
   },
 ];

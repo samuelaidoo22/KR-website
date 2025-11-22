@@ -70,7 +70,7 @@ export default function AboutPage() {
     <div className="space-y-20 pb-20">
       <section className="relative overflow-hidden bg-brown-900">
         <div className="absolute inset-0" aria-hidden="true">
-          <Image src="/pics/IMG-20250315-WA0028.jpg" alt="Kyidom farmers in the field" fill className="object-cover" priority />
+          <Image src="/pics/kyidom 1kg3.jpg" alt="Kyidom farmers in the field" fill className="object-cover object-[center_20.5%]" priority />
 
           <div className="absolute inset-0 bg-brown-900/80" />
         </div>
@@ -158,8 +158,8 @@ export default function AboutPage() {
               ))}
             </div>
           </div>
-          <div className="card-surface relative min-h-[420px] overflow-hidden">
-            <Image src="/pics/IMG-20250315-WA0010.jpg" alt="Kyidom processing facility" fill className="object-cover" />
+          <div className="card-surface relative min-h-[500.9px] overflow-hidden">
+            <Image src="/pics/IMG-20250315-WA0014.jpg" alt="Kyidom processing facility" fill className="object-cover object-[center_20.5%]" />
             <div className="absolute inset-0 bg-brown-900/20" />
           </div>
         </div>
@@ -170,7 +170,7 @@ export default function AboutPage() {
           <div className="space-y-6">
             <h2 className="section-title">Leadership that empowers</h2>
             <p className="section-subtitle">
-              Our leadership team, helmed by visionary founder Jemima Jireh-Aidoo, nurtures talent, strengthens farmer relationships, and builds resilient supply chains.
+              Our leadership team, helmed by visionary founder Sarah Aidoo, nurtures talent, strengthens farmer relationships, and builds resilient supply chains.
             </p>
             <div className="grid gap-6 md:grid-cols-2">
               <div className="card-surface p-6">
@@ -178,7 +178,7 @@ export default function AboutPage() {
                   <Award className="h-5 w-5" aria-hidden="true" />
                   Founder & CEO
                 </div>
-                <h3 className="mt-3 text-xl font-semibold text-brown-900">Jemima Jireh-Aidoo</h3>
+                <h3 className="mt-3 text-xl font-semibold text-brown-900">Sarah Aidoo</h3>
                 <p className="mt-3 text-sm text-brown-600">
                   Leads Kyidom Foods with a passion for farmer welfare, sustainable agriculture, and women&apos;s economic empowerment.
                 </p>
@@ -195,10 +195,10 @@ export default function AboutPage() {
               </div>
             </div>
           </div>
-          <div className="card-surface relative min-h-[380px] overflow-hidden">
-            <Image src="/pics/IMG-20250315-WA0029.jpg" alt="Kyidom leadership" fill className="object-cover" />
+          <div className="card-surface relative min-h-[500px] overflow-hidden">
+            <Image src="/pics/IMG-20250315-WA0019.jpg" alt="Kyidom leadership" fill className="object-cover object-[center_20.5%]" />
             <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-brown-900/70 via-transparent to-transparent p-6 text-white">
-              <p className="text-sm text-white/85">
+              <p className="text-sm text-white/200">
                 “We believe in Ghanaian talent, in our farmers, and in the vibrant future ahead for local agriculture.”
               </p>
             </div>
