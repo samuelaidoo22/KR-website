@@ -1,24 +1,7 @@
-name: Deploy to Vercel
-on:
-  push:
-    branches: [ main ]
-jobs:
-  vercel-deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Install Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-      - name: Install dependencies
-        run: npm ci
-      - name: Build
-        run: npm run build
-      - name: Vercel Deploy
-        uses: amondnet/vercel-action@v20
-        with:
-          vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}        # optional
-          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}# optional
-          vercel-args: '--prod'
+export default function ImpactPage() {
+  return (
+    <div>
+      <h1>Impact Page</h1>
+    </div>
+  );
+}
